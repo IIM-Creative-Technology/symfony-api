@@ -1,0 +1,13 @@
+api_platform:
+    title: 'TD API platform'
+    description: 'To have a beautiful API DOC'
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    patch_formats:
+        json: ['application/merge-patch+json']
+    swagger:
+        versions: [3]
+        api_keys:
+            apiKey:
+                name: Authorization
+                type: header
